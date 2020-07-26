@@ -10,30 +10,37 @@ package project1;
  * @author jasmeen, 2020
  */
 public class War extends Card {
-private int rank; 
-    private int suit; 
+private int suitNum;
+private int CardNum;
+private String CardValue;
+private String SuitValue;
     
  
-    public War(int suit, int rank){
-        this.rank = rank;
-        this.suit = suit;
-    }
-    
- 
-    public int getWar(){
-        return rank; 
-    }
-    public void setWar(int rank){
-        this.rank = rank;
+    public War()
+    {    
+         getSuit();
+         getCardName();
+         suit();
+         name();
     }
 
+ 
+    public int getSuit(){
+        return suitNum; 
+    }
+    public int getCardName(){
+        return CardNum; 
+    }
+    public String suit(){
+        return SuitValue; 
+    }
+    public String name(){
+        return CardValue; 
+    }
+    
     @Override
     public String toString() {
-        return "War{" + "rank=" + rank + ", suit=" + suit + '}';
+        return CardValue + " of " + SuitValue;
     }
-    
-    
-    
-  
-
+   
 }
