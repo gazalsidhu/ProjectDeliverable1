@@ -13,7 +13,7 @@ import java.util.LinkedList;
  * @author riddhi, 2020
  * @author jasmeen, 2020
  */
-public class TestWar {
+public class TestWar extends War{
 public static void main(String []args){
 
  List<War> cardDeck = new ArrayList<War>(); 
@@ -29,7 +29,7 @@ public static void main(String []args){
         
         deck1.addAll(cardDeck.subList(0, 25));                    
         deck2.addAll(cardDeck.subList(26, cardDeck.size()));
-          
+
         
             
         }  
