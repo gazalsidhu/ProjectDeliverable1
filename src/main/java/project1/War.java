@@ -3,44 +3,23 @@
 package project1;
 
 /**
- *This class +++Insert Description Here+++
+ *This class will return card name 
+ * and number and called in test class.
  *
  * @author gazal, 2020
  * @author riddhi, 2020
  * @author jasmeen, 2020
  */
-public class War extends Card {
-private int suitNum;
-private int CardNum;
-private String CardValue;
-private String SuitValue;
-    
+public class War extends Suit {
  
-    public War()
-    {    
-         getSuit();
-         getCardName();
-         suit();
-         name();
-    }
+Suit suitObj = new Suit(); // object of suit class
+CardNumber cardObj = new CardNumber(); // object of cardNumber class
 
- 
-    public int getSuit(){
-        return suitNum; 
-    }
-    public int getCardName(){
-        return CardNum; 
-    }
-    public String suit(){
-        return SuitValue; 
-    }
-    public String name(){
-        return CardValue; 
-    }
+    @Override  
+    public String toString() //return suit and card number
+    {
+        return cardObj.getCardName()+" of "+suitObj.suit();
+    } //end method toString
     
-    @Override
-    public String toString() {
-        return CardValue + " of " + SuitValue;
-    }
-   
-}
+    
+}// end class War
